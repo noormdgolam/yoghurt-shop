@@ -1,0 +1,269 @@
+/* header footer and the home page's style */
+
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+.bg-dark{
+    background-color: black !important;
+}
+.nav-link{
+    color: white !important;
+    font-size: 14px;
+    
+    font-weight: normal;
+
+}
+.nav-link:hover{
+    color:#999191 !important;
+}
+.margin{
+    margin: 0px 14px !important;
+}
+
+.navbar-nav{
+    position: absolute;
+    left: 64%;
+
+}
+.navbar{
+    height: 50px !important;
+}
+.Yoghurt{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+}
+.shop{
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+}
+.dropbtn {
+    color: white;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    text-align: center;
+    padding-top: 4px;
+    display: none;
+    position: absolute;
+    left: 10px;
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 12px;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    color: #999191;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.col-lg-2{
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+.images{
+    padding: 0px;
+    margin: 0px;
+} 
+.col-lg-2 img:hover{
+    filter: blur(3px);
+    cursor: pointer;
+}
+.testimonial{
+    padding: 7% 24%;
+    text-align: center;
+}
+.bangladesh{
+    font-family: 'Pacifico',cursive;
+    font-size: 6rem;
+}
+.head, .logo{
+    text-align: center;
+}
+.best{
+    font-family: 'Jura',sans-serif;
+    font-size: 4.6rem;
+}
+.head P{
+    font-family: 'Glegoo',serif;
+    font-size: 18px;
+    padding: 0px 182px;
+}
+.logo img{
+    padding: 10px;
+}
+.button {
+    padding-top: 20px;
+}
+.button button{
+    margin-left: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 15px;
+    border-radius: 0px !important;
+}
+.button a{
+    color: black;
+}
+.button a:hover{
+    color: white;
+    text-decoration: none;
+}
+.button button{
+    color:white;
+}
+.details{
+    background-image: url("./images/recipe_image.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150%;
+}
+.detail_img_src{
+    background-image: url("./images/recipe_image.webp");
+}
+.detail_img{
+    /* Full height */
+    height: 1000px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.details .row{
+     position: sticky;
+     top: 43%;
+     width: 100%;
+     text-align: center;
+     z-index: 2;
+}
+.card1{
+    background: url("./images/recipe_image.webp" ) ;
+}
+.card2{
+    background: url("./images/shop.jpg") ;
+}
+.card3{
+    background: url("./images/recipe_image.jpg") ;
+}
+.card4{
+    background: url("./images/career.jpg") ;
+    
+}
+.bg-image{
+    height: 400px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+}
+.bg-text{
+    background-color: #000000;
+    background-color: #00000066;
+    font-family: 'Glegoo',serif;
+    color:white;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+.bg-text button, .emailSection button{
+    background-color:transparent;
+    font-family: 'Glegoo',serif;
+    color: white;
+}
+.bg-text button:hover, .emailSection button:hover{
+    background-color: #080808;
+    background-color: #0a090966;
+}
+.emailSection{
+    padding: 7% 14%;
+    position: sticky;
+    bottom: 70%;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.emailSection h1{
+    font-weight: 100;
+    font-family: 'Pacifico',cursive;
+    color:black;
+    font-size: 10rem;
+    text-align: center;
+}
+.emailSection p{
+    font-family: 'Glegoo',serif;
+    font-size: 2rem;
+    color:#0d1564;
+    font-weight: 800;
+    padding-top: 10%;
+}
+.emailSection input{
+    width: 60%;
+    padding: 8px 8px;
+}
+.emailSection button{
+    padding: 8px 8px;
+    font-weight: bolder;
+}
+.footer{
+    padding: 2% 14%;
+    text-align: center;
+    height: 40px;
+    background: white;
+    z-index: 1;
+    position: sticky;
+    width: 100%;
+    font-weight: bolder;
+}
+.icons{
+    color: black;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.icons i{
+    margin: 0px 12px;
+}
+.icons a{
+    color: black;
+}
+.icons a:hover{
+    color: #998d8d;
+}
+.footer p a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Glegoo', 'serif';
+    font-weight: bolder;
+}
+.footer a:hover{
+    color:#998d8d;
+}
+/* ----------------------- end of main page's style ----------------------------*/
