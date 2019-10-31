@@ -11,6 +11,12 @@ app.get("/", function(req, res){
     res.render("main");
 });
 
+app.get("/superMarket", function(req, res){
+    res.render("superMarket");
+});
+app.get("/product1", function(req, res){
+    res.render("product1");
+});
 
 
 app.listen(3000, function(){
