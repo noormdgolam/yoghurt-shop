@@ -1,11 +1,12 @@
 /* header footer and the home page's style */
 
 body{
-    padding: 0px;
+    padding: 0px ;
     margin: 0px;
     height: 100%;
     width: 100%;
 }
+
 .bg-dark{
     background-color: black !important;
 }
@@ -177,38 +178,74 @@ body{
     background-size: cover;
     filter: blur(4px);
 }
-@media only screen  and (min-width : 1224px) {
-    .bg-image{
-        height: 300px;
-        width: 310px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        filter: blur(4px);
-    }
-    .navbar-nav{
-        position: absolute;
-        left: 50%;
-    }
-    .nav-link{
-        color: white !important;
-        font-size: 11px;
-        font-weight: bolder;
-    }
-    .footer{
-        padding: 6% 0% 0% 0%;
-        text-align: center;
-        height: 20px;
-        background: white;
-        z-index: 1;
+.col-lg-3,.col-md-3{
+    padding: 0px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    .navbar-nav {
         position: sticky;
-        width: 100%;
-        font-weight: bolder;
+        left: 60%;
     }
-    .icons{
-        color: black;
-        font-size: 20px !important;
-        padding-bottom: 5px !important;
+    .nav-link {
+        font-size: 12px !important;
+        margin: 0px !important;
+    }
+    .footer>.icons{
+        font-size: 25px;
+    }
+    .details>.row{
+        top: 58%;
+    }
+    .bg-text {
+        margin-left: 0px;
+        left: 50% !important;
+    }
+    .bg-text>h1{
+        font-size: 2rem;
+    }
+    .col-lg-3,
+    .col-md-3 {
+        padding: 0px;
+    }
+    .bg-image{
+        width: 100% ;
+    }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px){
+    .navbar-nav {
+        position: sticky;
+        left: 70vw;
+    }
+
+    .nav-link {
+        font-size: 14px !important;
+        margin: 0px !important;
+    }
+
+    .footer>.icons {
+        font-size: 25px;
+    }
+
+    .details>.row {
+        top: 59%;
+    }
+
+    .bg-text {
+        margin-left: 0px;
+        left: 50% !important;
+    }
+
+    .bg-text>h1 {
+        font-size: 2rem;
+    }
+
+    .col-lg-3,
+    .col-md-3 {
+        padding: 0px;
+    }
+
+    .bg-image {
+        width: 100%;
     }
 }
 .bg-text{
@@ -298,69 +335,217 @@ body{
 .footer a:hover{
     color:#998d8d;
 }
-@media only screen  and (min-width : 1224px) {
-    
-}
 /* ----------------------- end of main page's style ----------------------------*/
 
 /* products details */
 .products{
-    background-color: #f1f0f0;
-    padding-left: 5px;
-
+    background-color: #E9E8EE;
+    padding-left: 10px;
 }
-.productImage{
-    height:70%;
-    width: 69%;
+.products>.row{
+    margin-bottom: 20px;
+    min-height: 500px;
+    padding-top: 30px;
+}
+.productImage {
+    height: 68%;
+    width: 80%;
+}
+.productImageCup {
+    height: 68%;
+    width: 80%;
     
 }
 .productImage:hover{
     cursor: pointer;
-    height:90%;
-    width: 90%;
-    transition: height .4s;
-    transition: width .4s;
+    height:100%;
+    width: 112%;
+    padding: 0px;
+    transition-duration: .5s;
+}
+.productImageCup:hover {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    transition-duration: .5s;
+}
+.productName{
+    text-align: center;
+    padding-right: 30px;
+    font-weight: bold;
+    min-height: 100px;
 }
 .row{
     margin-left: 0px;
     margin-right: 0px;
 }
 /* product details with image and table */
-.prod{
-    height: 60%;
-    width: 100%;
-    border: 2px solid white;
-    text-align: center;
+
+    .prod {
+        margin: 7% 15%;
+        text-align: center;
+        
+    }
+    .productFeature {
+        background-color: #292929;
+        min-height: 530px;
+        text-align: center;
+        color: white;
+    }
+
+    table {
+        color: white;
+    }
+
+    td,
+    th,
+    table {
+       border: none !important;
+    }
+
+    .table>h1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .table>h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .ingredientPara {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: justify;
+        color: white;
+    }
+@media only screen and (min-width: 1200px) and (max-width: 1920px){
+    .prod{
+        height: 80vh;
+        width: 50vw;
+        margin-top: 100px; 
+    }
+    .prod>img{
+        height: 60vh;
+        width: 30vw;
+        margin-top: 20vh;
+    }
+    
+    table{
+        margin-top: 50px;
+        margin-left: 0vw;
+    }
+    .table>h1 {
+        padding-bottom: 5px;
+        padding-left: 0vw;
+        text-align: left;
+        padding-top: 3vh;
+    }
+    .table>h3 {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        padding-top: 18px;
+        padding-left: 0vw;
+    }
+    .ingredientPara{
+        width: 100%;
+        text-align: left;
+        padding-left: 5vw;
+        padding-bottom: 2vh;
+        margin-left: 100px;
+    }
+    .ingredientHead{
+        padding-top: 10vh;
+        padding-left: 8vw;
+    }
 }
-.productFeature{
-    padding-left: 150px;
-    padding-top: 50px;
-    background-color: #e0dddd;
-    min-height: 530px;
-    text-align: center;
-    padding-bottom: 50px;
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    .prod {
+        height: 60vh;
+        width: 40vw;
+        margin-top: 100px;
+    }
+
+    .prod>img {
+        height: 40vh;
+        width: 30vw;
+        margin-top: 12vh;
+    }
+
+    table {
+        margin-top: 50px;
+        margin-left: 15vw;
+    }
+    .table>h1 {
+        padding-bottom: 5px;
+        padding-left: 7vw;
+        padding-top: 5vh;
+    }
+
+    .table>h3 {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 18px;
+        padding-left: 7vw;
+    }
+
+    .ingredientPara {
+        width: 42vw;
+        text-align: justify;
+        padding-left: 13vw;
+    }
+
+    .ingredientHead {
+        padding-top: 3vh;
+        padding-left: 9vw;
+        font-weight: bold;
+    }
 }
-table{
-    margin-left: 120px;
-}
-td, th, table{
-    border: 1px solid white;
-}
-.table>h1{
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-.table>h3{
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 30px;
-}
-.table>p{
-    font-size: 15px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 20px;
-    text-align: left;
-    margin-left: 120px;
+@media only screen and (min-width: 992px) and (max-width: 1023px){
+    .productFeature{
+        padding: 7%;
+    }
+    .prod {
+        height: 30vh;
+        width: 30vw;
+        padding-top: 18vh;
+    }
+
+    .prod>img {
+        height: 30vh;
+        width: 30vw;
+        margin-left: 6vw;
+    }
+
+    table {
+        margin-top: 11px;
+        margin-left: 8vw;
+    }
+
+    .table>h1 {
+        padding-bottom: 5px;
+        
+        font-size: 2rem;
+    }
+
+    .table>h3 {
+        font-weight: bold;
+       
+        font-size: 1rem;
+    }
+
+    .ingredientHead {
+        padding-top: 3vh;
+        padding-left: 9vw;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .ingredientPara {
+        width: 47vw;
+        text-align: justify;
+    }
 }
