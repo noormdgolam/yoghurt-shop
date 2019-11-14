@@ -81,13 +81,17 @@ body{
     padding-right: 0px;
     overflow: hidden;
 }
-.images{
-    padding: 0px;
-    margin: 0px;
-} 
-.introImage> img:hover{
-    filter: blur(3px);
-    cursor: pointer;
+.images>h1{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.carousel-inner{
+    bottom:220px;
+}
+.carousel-item-img{
+    width: 100%;
+    height: 900px;
 }
 .testimonial{
     padding: 7% 24%;
@@ -383,84 +387,132 @@ body{
 /* product details with image and table */
 
     .prod {
-        margin: 7% 15%;
-        text-align: center;
+        margin: 7% 0%;
         
     }
-    .productFeature {
+    .productFeature>.row{
         background-color: #292929;
-        min-height: 530px;
-        text-align: center;
+        min-height: 700px;
         color: white;
     }
-
-    table {
-        color: white;
+    .prodDetails{
+        padding-top: 200px;
+        padding-right: 150px;
     }
-
-    td,
-    th,
-    table {
-       border: none !important;
-    }
-
-    .table>h1 {
-        font-size: 25px;
-        font-weight: bold;
-        color: white;
-    }
-
-    .table>h3 {
-        font-size: 15px;
-        font-weight: bold;
-        color: white;
-    }
-
     .ingredientPara {
         font-size: 15px;
         font-weight: bold;
         text-align: justify;
         color: white;
     }
+    .prodImage{
+       bottom: 0px !important;
+       top: 100px;
+        border-right: 2px solid white;
+    }
+    .ingredientHead {
+        padding-top: 3vh;
+        padding-left: 9vw;
+        font-weight: bold;
+    }
+    .btn-primary{
+        background-color: #352e2e;
+        margin-left: 300px;
+        margin-top: -85px;
+        background-color: #352e2e;
+    }
+    .btn-primary>i{
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .btn-primary>i:hover{
+        color: #292929 !important;
+    }
+/*------------------------------ ourStory page -------------------------------*/
+
+.story{
+   
+}
+.storyHead{
+    background: url("./images/recipe_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+.storyHead>h1{
+    padding: 7% 30%;
+    color: darkgreen;
+    text-shadow: 2px 6px black;
+}
+.story>.row{
+    background: white;
+}
+.storyImg{
+    height: 300px;
+    width: 100%;
+}
+.description{
+    padding: 7% 14%;
+}
+/*------------ contact page ---------------*/
+.contactUs{
+    margin: 7% 14%
+}
+.address, .contactUs form{
+    padding: 0% 24%;
+    margin-top: 50px;
+}
+.address h2{
+    font-family: fantasy;
+}
+.form-control{
+    margin-bottom: 20px;;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  input:hover{
+    border: 1px solid black;
+  }
+  textarea:hover{
+    border: 1px solid black;
+  }
+
+  /*--------------- registration ---------*/
+
+  .register, .login{
+      margin: 7% 30%;
+  }
+  .register h1, .login h1{
+      padding-bottom: 20px;
+      
+    font-family: 'Oswald', sans-serif;
+  }
+  .register h2{
+      font-size: 1rem;
+      padding-top: 20px;
+  }
+  .register a{
+    margin-left: 402px;
+    margin-top: -63px;
+  }
+/*-------------------------- responsive ----------------------*/
 @media only screen and (min-width: 1200px) and (max-width: 1920px){
     .prod{
-        height: 80vh;
-        width: 50vw;
-        margin-top: 100px; 
+        margin: 0% 0% !important;
     }
     .prod>img{
-        height: 60vh;
-        width: 30vw;
-        margin-top: 20vh;
-    }
-    
-    table{
-        margin-top: 50px;
-        margin-left: 0vw;
-    }
-    .table>h1 {
-        padding-bottom: 5px;
-        padding-left: 0vw;
-        text-align: left;
-        padding-top: 3vh;
-    }
-    .table>h3 {
-        font-size: 15px;
-        font-weight: bold;
-        text-align: left;
-        padding-top: 18px;
-        padding-left: 0vw;
-    }
-    .ingredientPara{
-        width: 100%;
-        text-align: left;
-        padding-left: 5vw;
-        padding-bottom: 2vh;
-        margin-left: 100px;
+        height: 500px;
+        width: 500px;
+        margin-top: 10vh;
+        margin-left: 8vw;
+        border-right: 2px solid white;
     }
     .ingredientHead{
-        padding-top: 10vh;
-        padding-left: 8vw;
+        padding-left: 0px;
     }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px){
@@ -474,24 +526,9 @@ body{
         height: 40vh;
         width: 30vw;
         margin-top: 12vh;
+        margin-left: 8vw;
     }
 
-    table {
-        margin-top: 50px;
-        margin-left: 15vw;
-    }
-    .table>h1 {
-        padding-bottom: 5px;
-        padding-left: 7vw;
-        padding-top: 5vh;
-    }
-
-    .table>h3 {
-        font-size: 15px;
-        font-weight: bold;
-        padding-top: 18px;
-        padding-left: 7vw;
-    }
 
     .ingredientPara {
         width: 42vw;
@@ -501,7 +538,6 @@ body{
 
     .ingredientHead {
         padding-top: 3vh;
-        padding-left: 9vw;
         font-weight: bold;
     }
 }

@@ -12,6 +12,11 @@ app.get("/", function(req, res){
 app.get("/superMarket", function(req, res){
     res.render("superMarket");
 });
+
+app.get("/ourStory", function(req, res){
+    res.render("ourStory");
+});
+//------------------- product pages --------------//
 app.get("/product1", function(req, res){
     res.render("supermarketFlavours/product1");
 });
@@ -30,6 +35,16 @@ app.get("/product5", function (req, res) {
 app.get("/product6", function (req, res) {
     res.render("supermarketFlavours/product6");
 });
+app.get("/contactUs", function(req, res){
+    res.render("contactUs");
+});
+app.get("/register", function(req, res){
+    res.render("register");
+});
+app.get("/login", function(req, res){
+    res.render("login");
+});
+//------------------------------------------------//
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;

@@ -1,62 +1,38 @@
 <%- include("partial/header"); -%>
-<div class="productFeature">
-    <div class="row">
+ <div class="productFeature">
+     <div class="row">
         <div class="col-lg-6 col-xl-6 col-sm-12">
             <div class="prod">
-                <img src="./images/prodct5.webp">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner prodImage">
+                      <div class="carousel-item active" style="left:200px">
+                        <img src="./images/prodct7.webp" width="300px" height="400px"  class="" alt="...">
+                      </div>
+                      <div class="carousel-item" style="left:200px">
+                        <img src="./images/prodct8.webp" width="300px" height="400px"  class="" alt="...">
+                      </div>
+                      <div class="carousel-item" style="left:200px">
+                        <img src="./images/prodct9.webp" width="300px" height="400px"  class="" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    </a>
+                  </div>
             </div>
         </div>
         <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
-            <div class="table">
-                <h1>HONEY SPICE GANOLA</h1>
-                <h3>NUTRITIONAL INFORMATION</h3>
-                <table>
-                    <th>Serving size: 100gm</th>
-                    <th>Per serve</th>
-                    <tr>
-                        <td>Energy kj</td>
-                        <td>893</td>
-                    </tr>
-                    <tr>
-                        <td>Protein g</td>
-                        <td>10.6</td>
-                    </tr>
-                    <tr>
-                        <td>Fat total g</td>
-                        <td>8.7</td>
-                    </tr>
-                    <tr>
-                        <td>Fat Saturated g</td>
-                        <td>3.2</td>
-                    </tr>
-                    <tr>
-                        <td>Carbohydrate g</td>
-                        <td>22.9</td>
-                    </tr>
-                    <tr>
-                        <td>Sugar g</td>
-                        <td>15.9</td>
-                    </tr>
-                    <tr>
-                        <td>Sodium mg</td>
-                        <td>48.3</td>
-                    </tr>
-                    <tr>
-                        <td>Calcium mg</td>
-                        <td>140</td>
-                    </tr>
-                    <tr>
-                        <td>Potassium mg</td>
-                        <td>190.2</td>
-                    </tr>
-                </table>
+            <div class="prodDetails">
+                <h3 class="ingredientHead">CLASSIC GREEK YOUGHURTS</h3>
+                <p class="ingredientPara">Classic yoghurt (82%) [whole milk, milk solids, sucrose, live probiotic cultures -
+                    lactobacillus,
+                    acidophilus & bifidus], honey spice granola (18%) [wholegrain oats, ironbark honey, organic coconuts,
+                    sunflower kernels, sultanas, walnuts, almonds, pumpkin seed kernels, sunflower oil, spice</p>
+                    <p style="padding-top: 30px"><b>Price:  </b>13$</p>
+                <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i></button>
             </div>
-            <h3 class="ingredientHead">INGREDIENTS</h3>
-            <p class="ingredientPara">Classic yoghurt (82%) [whole milk, milk solids, sucrose, live probiotic cultures -
-                lactobacillus,
-                acidophilus & bifidus], honey spice granola (18%) [wholegrain oats, ironbark honey, organic coconuts,
-                sunflower kernels, sultanas, walnuts, almonds, pumpkin seed kernels, sunflower oil, spice</p>
         </div>
     </div>
-</div>
+ </div>
 <%- include("partial/footer") -%>

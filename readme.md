@@ -21,12 +21,12 @@
         * MONGODB
 
 
-**WEEK 8 :** Done the home page.
-**WEEK 9 :** Update readme file and added some products details.
-**WEEK 10:** Update more products details.
-**WEEK 11:** Login page will be ready.
-**WEEK 12:** Our story page will be ready.
-**WEEK 13:** Healt tips page will be ready.
-**WEEK 14:** Contact page will be ready.
-**WEEK 15:** For back end work database will be added.
-**WEEK 16:** Process for user account will be done by back end development.
+**WEEK 8 :** Done the home page.      
+**WEEK 9 :** Update readme file and added some products details.      
+**WEEK 10:** Update more products details.      
+**WEEK 11:** Login page will be ready.     
+**WEEK 12:** Our story page will be ready.      
+**WEEK 13:** Healt tips page will be ready.      
+**WEEK 14:** Contact page will be ready.       
+**WEEK 15:** For back end work database will be added.     
+**WEEK 16:** Process for user account will be done by back end development.     

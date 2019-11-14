@@ -1,0 +1,46 @@
+<%- include("partial/header"); -%>
+
+<div class="contactUs">
+    <div class="address">
+        <h2 style="text-align:left">Contact Us</h2>
+          <p style="font-weight: normal">To know some information or to let us know about the product quality message us.</p>
+          <p style="font-weight: normal">We shall take your valuable message importantly and take necessary steps on that.</p>
+          <br>
+          <p style="font-weight: normal">32 Foreign Dormitory building, East campus,Huzhou city,Zhejiang,China</p>
+          <br>
+          <a href="online@vutvs.com" style="color:#A88499">online@vutvs.com</a>
+          <p style="font-weight: normal; color:#A88499">Tel: +912245417000, Mobile: +917498445856,<br>
+          Whatsapp: +918291916111 <br>
+        Wechat: yoghurtShopBd</p>
+    </div>
+    <form action="/contactUs" method="POST">
+        <div class="form-row">
+            <div class="col-lg-6">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-lg-6">
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-12 padding-top4">
+              <input type="text" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-12 padding-top4">
+              <textarea type="text" class="form-control" placeholder="
+
+
+                        Type your message here" rows="8" cols="80"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-lg-12 padding-top4">
+              <button type="button" name="button" class="btn btn-lg btn-secondary" style="padding: 2% 1%;font-size:1.3rem;font-weight:700; width:100%">Submit</button>
+            </div>
+          </div>
+      </form>
+</div>
+
+<%- include("partial/footer"); -%>
