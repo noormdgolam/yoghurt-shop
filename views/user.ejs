@@ -1,0 +1,11 @@
+<%- include("partial/header"); -%>
+<% users.forEach(function(user){%>
+<form action="/logout?_method=DELETE" method="post" style="float: right;">
+    <button type="submit" class="btn btn-lg btn-secondary">Log Out</button>
+</form>
+<div class="name" style="padding: 7% 30%">
+    <h1>Hey <%= user.firstname%> <%= user.lastname%> you have logged in successfully </h1>
+</div>
+<% }) %>
+
+<%- include("partial/footer"); -%>
