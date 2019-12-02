@@ -1,11 +1,17 @@
 <%- include("partial/header"); -%>
-<% users.forEach(function(user){%>
-<form action="/logout?_method=DELETE" method="post" style="float: right;">
-    <button type="submit" class="btn btn-lg btn-secondary">Log Out</button>
+
+<a href="/users/logout" class="btn btn-secondary" style="float: right;position: absolute;
+    left: 94%;
+    bottom: 91%;">Logout</a>
+<form action="/delete" method="post">
+    <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
+    <button type="submit" class="btn btn-secondary" style="position: absolute;
+    bottom: 91%;
+    left: 87%;"> Delete Account </button>
 </form>
 <div class="name" style="padding: 7% 30%">
-    <h1>Hey <%= user.firstname%> <%= user.lastname%> you have logged in successfully </h1>
+    <h1>Hey <b><%= user.name%></b> you have logged in successfully </h1>
 </div>
-<% }) %>
+
 
 <%- include("partial/footer"); -%>
