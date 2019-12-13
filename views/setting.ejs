@@ -1,16 +1,18 @@
 <%- include("partial/header"); -%>
 <div style="display: flex;margin-left: 30%;">
     <a href="/users/logout" class="btn btn-outline-secondary" style="margin: 2px;"" >Logout</a>
-    <a href="/setting" class="btn btn-outline-secondary" style="margin: 2px;"" >Setting</a>
+    <a href="/edit" class="btn btn-outline-secondary" style="margin: 2px;"" >Edit</a>
 
     <form action="/delete" method="post">
         <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
         <button type="submit" class="btn btn-outline-secondary" style="margin: 2px;"> Delete Account </button>
-    </form>
+        </form>
 </div>
 
-<div class="name" style="padding: 7% 30%;min-height: 711px;">
-    <h1>Hey <b><%= user.name%></b> you have logged in successfully </h1>
+<div class="name" style="padding: 7% 30%;min-height: 660px;">
+    <h3>User Details</h3>
+    <h3>Name: <span style="color:black"><%= user.name %></span></h3>
+    <h3>Email: <span style="color:black"><%= user.email %></span></h3>
 </div>
 
 
